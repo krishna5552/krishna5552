@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @krishna5552
-- 👀 I’m interested in Data Science
-- 🌱 I’m currently learning Bigdata
+- 👀 I’m interested in Bigdata
+- 🌱 I’m currently learning Pyspark 
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me  - mvenkat8801@gmail.com
 
