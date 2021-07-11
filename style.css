@@ -1,0 +1,17 @@
+small {
+    font-size: xx-small;
+    
+  }
+larger {
+    font-size: larger;
+  }
+point {
+    font-size: 24pt;
+  }
+.percent {
+    font-size: 300%;
+  }
+
+body {
+    background-color:lightgreen;
+}
