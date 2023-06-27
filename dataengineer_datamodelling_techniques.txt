@@ -1,0 +1,194 @@
+Relational Data Modeling:
+
+    Relational data modeling is based on the relational database model, which organizes data into tables with
+rows and columns. It uses the principles of normalization to eliminate data redundancy and ensure data integrity.
+
+Here are the key aspects of relational data modeling:
+
+    Tables: 
+    
+        Data is organized into tables, where each table represents an entity or concept.
+
+        Each row in a table represents a specific instance of that entity, and each column represents
+    an attribute or characteristic of the entity.
+
+    Relationships:
+    
+        Relationships between tables are established using primary and foreign keys.
+        
+        A primary key uniquely identifies each row in a table, while a foreign key establishes a link between
+    two tables based on a common attribute.
+
+    Normalization:
+    
+        Relational data modeling employs normalization techniques (such as First Normal Form, Second Normal
+    Form, etc.) to minimize data redundancy and ensure data consistency.
+
+    Structured Query Language (SQL):
+    
+        Relational databases are queried using SQL, a standard language for managing relational databases.
+
+Relational data modeling is well-suited for structured data and provides robust support for complex queries, transactions, and data integrity.
+
+Dimensional Data Modeling:
+
+    Dimensional data modeling is primarily used in data warehousing and business intelligence (BI) systems.
+    It focuses on creating a dimensional model that is optimized for querying and analyzing large volumes of
+data. 
+
+
+Key features of dimensional data modeling include:
+
+    Fact Tables:
+
+        Dimensional models typically include one or more fact tables that contain quantitative measurements or
+    metrics (e.g., sales, revenue).
+    
+        Fact tables are associated with primary keys from various dimension tables.
+
+
+    Dimension Tables:
+    
+        Dimension tables contain descriptive attributes that provide context to the facts stored in the fact
+    tables.
+    
+        Examples of dimensions include time, geography, product, and customer.
+    
+        Dimension tables are often hierarchical and allow for easy slicing and dicing of data.
+
+    Star Schema and Snowflake Schema:
+    
+        Dimensional models can be organized using a star schema, where the fact table is at the center
+    connected to dimension tables, or a snowflake schema, which further normalizes dimension tables to reduce
+    redundancy.
+
+    Aggregations:
+    
+        Dimensional data models often include pre-aggregated data at different levels of granularity to improve
+    query performance.
+
+Dimensional data modeling simplifies complex data structures, enhances query performance, and facilitates ad-hoc reporting and analysis in BI environments.
+
+NoSQL Data Modeling:
+
+    NoSQL (Not Only SQL) databases are designed to handle large-scale, unstructured, and semi-structured data.
+
+    They provide flexible data models and horizontal scalability. NoSQL data modeling techniques can vary based
+    on the specific NoSQL database type (e.g., document-oriented, key-value, columnar, graph).
+    
+    Here are some general aspects of NoSQL data modeling:
+
+    Document-oriented:
+    
+        Data is stored in flexible, self-describing documents (e.g., JSON, XML).
+        
+        Documents can have different structures and fields, providing schema flexibility.
+
+    Key-Value:
+    
+        Data is stored as key-value pairs, where the key uniquely identifies the data and the value can be any
+        data type.
+
+    Columnar: 
+    
+        Data is stored in columnar databases where each column can have a different schema or structure.
+        
+        This allows for efficient querying and analysis of specific columns.
+
+    Graph:
+    
+        Data is modeled as nodes and edges, representing entities and relationships between them.
+        
+        Graph databases excel in handling highly interconnected data.
+
+NoSQL databases offer high scalability, availability, and performance for certain use cases, such as handling
+big data, real-time applications, and unstructured data sources.
+
+However, they may sacrifice some of the consistency and transactional features provided by traditional 
+relational databases.
+
+
+Entity:
+
+    An entity represents a distinct and meaningful object, concept, or thing in the real world that we want to capture and store data about. It can be a physical object (e.g., a customer, a product) or a conceptual entity (e.g., an order, a transaction). Entities are the building blocks of a data model.
+
+    For example, in a retail system, entities could include Customer, Product, Order, and Employee.
+
+Attributes:
+
+    Attributes are the characteristics or properties that describe entities.
+    
+    They represent the specific pieces of information we want to capture and store about an entity.
+    
+    Attributes provide details and context to the entities. They can be qualitative (e.g., name, address) or
+    quantitative (e.g., age, quantity).
+
+    For example, for the Customer entity, attributes could include CustomerID, Name, Address, Email, and Phone.
+
+Relationships:
+
+    Relationships define the associations or connections between entities.
+    
+    They represent the logical connections or dependencies between different entities in a data model.
+    
+    Relationships help capture how entities interact or relate to each other.
+
+
+    There are different types of relationships:
+
+    One-to-One (1:1):
+    
+        A single instance of an entity is associated with only one instance of another entity.
+         
+        For example, each employee is assigned a unique employee ID.
+
+    One-to-Many (1:N):
+    
+        A single instance of an entity is associated with multiple instances of another entity.
+        
+        For example, one customer can place multiple orders.
+
+    Many-to-Many (N:N):
+    
+        Multiple instances of an entity are associated with multiple instances of another entity.
+        
+        For example, multiple products can be part of multiple orders.
+
+Relationships are typically established by using keys (discussed next) that connect entities together.
+
+Keys:
+
+    Keys are attributes or combinations of attributes that uniquely identify each instance of an entity within
+a data model.
+
+They ensure that each entity instance can be uniquely identified and distinguished from others.
+
+    There are different types of keys:
+
+    Primary Key:
+    
+        A primary key is a unique identifier for each instance of an entity. It ensures the uniqueness and
+    integrity of the data in a table. For example, in a Customer table, the CustomerID could be the primary key.
+
+
+    Foreign Key:
+    
+        A foreign key is an attribute or set of attributes in one entity that refers to the primary key of
+    another entity.
+    
+    It establishes relationships between entities.
+    
+    For example, in an Order table, the CustomerID could be a foreign key that references the primary key of
+    the Customer table.
+
+Composite Key: 
+
+    A composite key is a combination of two or more attributes that together uniquely identify an instance of
+an entity.
+
+For example, a composite key in an Employee table could be a combination of EmployeeID and DepartmentID.
+
+Keys play a crucial role in maintaining data integrity, establishing relationships between entities, and
+facilitating efficient data retrieval.
+
+
